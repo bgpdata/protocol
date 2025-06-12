@@ -12,7 +12,7 @@ package org.bgpdata.api.parsed.message;
 import java.math.BigInteger;
 
 /**
- * POJO for openbmp.parsed.collector record
+ * POJO for bgpdata.parsed.collector record
  */
 public class CollectorPojo {
 

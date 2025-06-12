@@ -9,9 +9,9 @@ package org.bgpdata.api.parsed.message;
  */
 
 /**
- * Parses raw openbmp.parsed.* message headers and content portion
+ * Parses raw bgpdata.parsed.* message headers and content portion
  *
- * @See http://openbmp.org/#!docs/MESSAGE_BUS_API.md for more details on structure of message.
+ * @See http://bgpdata.org/#!docs/MESSAGE_BUS_API.md for more details on structure of message.
  */
 public class Message {
     private Float version;
@@ -55,7 +55,7 @@ public class Message {
             String attr = header.split(":")[0].trim();
 
             /*
-             * attribute names are from http://openbmp.org/#!docs/MESSAGE_BUS_API.md headers
+             * attribute names are from http://bgpdata.org/#!docs/MESSAGE_BUS_API.md headers
              */
             if (attr.equals("V")) {
                 this.version = Float.valueOf(value);

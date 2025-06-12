@@ -15,7 +15,7 @@
 		<spring-cloud-version>1.1.0.RELEASE</spring-cloud-version>
 		<spring-framework-version>4.3.3.RELEASE</spring-framework-version>
 		<spring-boot-version>1.4.1.RELEASE</spring-boot-version>
-		<openbmp-api-version>0.1.0-SNAPSHOT</openbmp-api-version>
+		<bgpdata-api-version>0.1.0-SNAPSHOT</bgpdata-api-version>
 	</properties>
 
 	<dependencies>
@@ -45,7 +45,7 @@
         <dependency>
             <groupId>org.bgpdata.api</groupId>
             <artifactId>bgpdata-api-message</artifactId>
-            <version>${openbmp-api-version}</version>
+            <version>${bgpdata-api-version}</version>
         </dependency>
 	</dependencies>
 

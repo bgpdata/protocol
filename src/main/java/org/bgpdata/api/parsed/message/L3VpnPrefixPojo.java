@@ -12,7 +12,7 @@ package org.bgpdata.api.parsed.message;
 import java.math.BigInteger;
 
 /**
- * POJO for openbmp.parsed.l3vpn record
+ * POJO for bgpdata.parsed.l3vpn record
  */
 public class L3VpnPrefixPojo {
 

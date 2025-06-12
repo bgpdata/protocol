@@ -14,7 +14,7 @@ import org.supercsv.util.CsvContext;
 
 
 /**
- * Processor class to parse the timestamp from openbmp.parsed.* messages
+ * Processor class to parse the timestamp from bgpdata.parsed.* messages
  * <p>
  * Format is standard java.sql.Timestamp of 'YYYY-mm-dd HH:MM:SS.ffffff'
  */

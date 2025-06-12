@@ -21,7 +21,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Format class for router parsed messages (openbmp.parsed.router)
+ * Format class for router parsed messages (bgpdata.parsed.router)
  * <p>
  * Schema Version: 1.4
  */
@@ -49,7 +49,7 @@ public class Router extends Base {
      * Handle the message by parsing it and storing the data in memory.
      *
      * @param version Float representation of maximum message bus specification version supported.
-     *                See http://openbmp.org/#!docs/MESSAGE_BUS_API.md for more details.
+     *                See http://bgpdata.org/#!docs/MESSAGE_BUS_API.md for more details.
      * @param data    TSV data (MUST not include the headers)
      */
     public Router(Float version, String data) {

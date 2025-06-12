@@ -21,7 +21,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Format class for l3vpn parsed messages (openbmp.parsed.l3vpn)
+ * Format class for l3vpn parsed messages (bgpdata.parsed.l3vpn)
  * <p>
  * Schema Version: 1.5
  */
@@ -85,7 +85,7 @@ public class L3VpnPrefix extends Base {
      * Handle the message by parsing it and storing the data in memory.
      *
      * @param version Float representation of maximum message bus specification version supported.
-     *                See http://openbmp.org/#!docs/MESSAGE_BUS_API.md for more details.
+     *                See http://bgpdata.org/#!docs/MESSAGE_BUS_API.md for more details.
      * @param data    TSV data (MUST not include the headers)
      */
     public L3VpnPrefix(Float version, String data) {

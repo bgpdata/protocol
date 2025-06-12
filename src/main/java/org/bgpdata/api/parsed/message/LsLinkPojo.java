@@ -12,7 +12,7 @@ package org.bgpdata.api.parsed.message;
 import java.math.BigInteger;
 
 /**
- * POJO for openbmp.parsed.lsnode record
+ * POJO for bgpdata.parsed.lsnode record
  */
 public class LsLinkPojo {
 

@@ -20,7 +20,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Format class for ls_node parsed messages (openbmp.parsed.ls_node)
+ * Format class for ls_node parsed messages (bgpdata.parsed.ls_node)
  * <p>
  * Schema Version: 1.4
  */
@@ -54,7 +54,7 @@ public class LsNode extends Base {
      * Handle the message by parsing it and storing the data in memory.
      *
      * @param version Float representation of maximum message bus specification version supported.
-     *                See http://openbmp.org/#!docs/MESSAGE_BUS_API.md for more details.
+     *                See http://bgpdata.org/#!docs/MESSAGE_BUS_API.md for more details.
      * @param data    TSV data (MUST not include the headers)
      */
     public LsNode(Float version, String data) {

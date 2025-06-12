@@ -9,38 +9,22 @@ package org.bgpdata.api.parsed.message;
  *
  */
 
-import org.bgpdata.api.parsed.processor.ParseLongEmptyAsZero;
-import org.bgpdata.api.parsed.processor.ParseNullAsEmpty;
-import org.bgpdata.api.parsed.processor.ParseTimestamp;
-import org.supercsv.cellprocessor.ParseInt;
-import org.supercsv.cellprocessor.ParseLong;
-import org.supercsv.cellprocessor.constraint.NotNull;
-import org.supercsv.cellprocessor.ift.CellProcessor;
-
 import java.math.BigInteger;
-import java.sql.Date;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 /**
- * POJO for openbmp.parsed.unicast_prefix record
+ * POJO for bgpdata.parsed.base_attribute record
  */
-public class UnicastPrefixPojo {
+public class BaseAttributePojo {
 
     private Boolean isWithdrawn;             // action
     private BigInteger sequence;
     private String hash;
     private String router_hash;
     private String router_ip;
-    private String base_attr_hash;
     private String peer_hash;
     private String peer_ip;
     private Long peer_asn;
     private String timestamp;
-    private String prefix;
-    private Integer prefix_len;
-    private Boolean isIPv4;
     private String origin;
     private String as_path;
     private Integer as_path_len;
@@ -55,27 +39,18 @@ public class UnicastPrefixPojo {
     private Boolean isAtomicAggregate;
     private Boolean isNextHopIpv4;
     private String originator_id;
-    private Long path_id;
-    private String labels;
-    private Boolean isPrePolicy;
-    private Boolean isAdjRibIn;
     private String large_community_list;
 
-    public UnicastPrefixPojo() {
+    public BaseAttributePojo() {
         isWithdrawn = false;
         sequence = BigInteger.ZERO;
         peer_asn = 0L;
-        prefix_len = 0;
-        isIPv4 = false;
         as_path_len = 0;
         origin_asn = 0L;
         med = 0L;
         local_pref = 0L;
         isAtomicAggregate = false;
         isNextHopIpv4 = false;
-        path_id = 0L;
-        isPrePolicy = true;
-        isAdjRibIn = true;
     }
 
     public Boolean getWithdrawn() {
@@ -118,14 +93,6 @@ public class UnicastPrefixPojo {
         this.router_ip = router_ip;
     }
 
-    public String getBase_attr_hash() {
-        return base_attr_hash;
-    }
-
-    public void setBase_attr_hash(String base_attr_hash) {
-        this.base_attr_hash = base_attr_hash;
-    }
-
     public String getPeer_hash() {
         return peer_hash;
     }
@@ -156,30 +123,6 @@ public class UnicastPrefixPojo {
 
     public void setTimestamp(String timestamp) {
         this.timestamp = timestamp;
-    }
-
-    public String getPrefix() {
-        return prefix;
-    }
-
-    public void setPrefix(String prefix) {
-        this.prefix = prefix;
-    }
-
-    public Integer getPrefix_len() {
-        return prefix_len;
-    }
-
-    public void setPrefix_len(Integer prefix_len) {
-        this.prefix_len = prefix_len;
-    }
-
-    public Boolean getIPv4() {
-        return isIPv4;
-    }
-
-    public void setIPv4(Boolean IPv4) {
-        isIPv4 = IPv4;
     }
 
     public String getOrigin() {
@@ -292,38 +235,6 @@ public class UnicastPrefixPojo {
 
     public void setOriginator_id(String originator_id) {
         this.originator_id = originator_id;
-    }
-
-    public Long getPath_id() {
-        return path_id;
-    }
-
-    public void setPath_id(Long path_id) {
-        this.path_id = path_id;
-    }
-
-    public String getLabels() {
-        return labels;
-    }
-
-    public void setLabels(String labels) {
-        this.labels = labels;
-    }
-
-    public Boolean getPrePolicy() {
-        return isPrePolicy;
-    }
-
-    public void setPrePolicy(Boolean prePolicy) {
-        isPrePolicy = prePolicy;
-    }
-
-    public Boolean getAdjRibIn() {
-        return isAdjRibIn;
-    }
-
-    public void setAdjRibIn(Boolean adjRibIn) {
-        isAdjRibIn = adjRibIn;
     }
 
     public String getLarge_community_list() {

@@ -12,7 +12,7 @@ package org.bgpdata.api.parsed.message;
 import java.math.BigInteger;
 
 /**
- * POJO for openbmp.parsed.router record
+ * POJO for bgpdata.parsed.router record
  */
 public class RouterPojo {
 

@@ -19,7 +19,7 @@ import java.util.Map;
 import java.util.TimerTask;
 
 /**
- * Format class for collector parsed messages (openbmp.parsed.collector)
+ * Format class for collector parsed messages (bgpdata.parsed.collector)
  * <p>
  * Schema Version: 1.4
  */

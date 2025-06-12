@@ -20,7 +20,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Format class for peer parsed messages (openbmp.parsed.peer)
+ * Format class for peer parsed messages (bgpdata.parsed.peer)
  * <p>
  * Schema Version: 1.6
  */

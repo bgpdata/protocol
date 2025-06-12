@@ -14,7 +14,7 @@ import org.supercsv.cellprocessor.constraint.NotNull;
 import org.supercsv.cellprocessor.ift.CellProcessor;
 
 /**
- * Format class for bmp_stat parsed messages (openbmp.parsed.bmp_stat)
+ * Format class for bmp_stat parsed messages (bgpdata.parsed.bmp_stat)
  * <p>
  * Schema Version: 1.4
  */

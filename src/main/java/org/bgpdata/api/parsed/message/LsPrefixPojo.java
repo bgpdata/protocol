@@ -12,9 +12,9 @@ package org.bgpdata.api.parsed.message;
 import java.math.BigInteger;
 
 /**
- * POJO for openbmp.parsed.lsnode record
+ * POJO for bgpdata.parsed.lsnode record
  */
-public class LsNodePojo {
+public class LsPrefixPojo {
 
     private Boolean isWithdrawn;             // action
     private BigInteger sequence;
@@ -31,21 +31,30 @@ public class LsNodePojo {
     private String router_id;
     private BigInteger routing_id;
     private Long ls_id;
-    private String mt_ids;
     private String ospf_area_id;
     private String isis_area_id;
     private String protocol;
-    private String flags;
     private String as_path;
     private Long local_pref;
     private Long med;
     private String next_hop;
-    private String name;
+
+    private String local_node_hash;
+    private Long mt_id;
+    private String ospf_route_type;
+    private String igp_flags;
+    private Long route_tag;
+    private Long ext_route_tag;
+    private String ospf_fwd_address;
+    private Long igp_metric;
+    private String prefix;
+    private Integer prefix_len;
+
     private Boolean isPrePolicy;
     private Boolean isAdjRibIn;
-    private String sr_capabilities;
+    private String prefix_sid_tlv;
 
-    public LsNodePojo() {
+    public LsPrefixPojo() {
         isWithdrawn = false;
         sequence = BigInteger.ZERO;
         peer_asn = 0L;
@@ -53,6 +62,13 @@ public class LsNodePojo {
         ls_id = 0L;
         local_pref = 0L;
         med = 0L;
+
+        mt_id = 0L;
+        route_tag = 0L;
+        ext_route_tag = 0L;
+        igp_metric = 0L;
+        prefix_len = 0;
+
         isPrePolicy = true;
         isAdjRibIn = true;
     }
@@ -169,14 +185,6 @@ public class LsNodePojo {
         this.ls_id = ls_id;
     }
 
-    public String getMt_ids() {
-        return mt_ids;
-    }
-
-    public void setMt_ids(String mt_ids) {
-        this.mt_ids = mt_ids;
-    }
-
     public String getOspf_area_id() {
         return ospf_area_id;
     }
@@ -199,14 +207,6 @@ public class LsNodePojo {
 
     public void setProtocol(String protocol) {
         this.protocol = protocol;
-    }
-
-    public String getFlags() {
-        return flags;
-    }
-
-    public void setFlags(String flags) {
-        this.flags = flags;
     }
 
     public String getAs_path() {
@@ -241,12 +241,84 @@ public class LsNodePojo {
         this.next_hop = next_hop;
     }
 
-    public String getName() {
-        return name;
+    public String getLocal_node_hash() {
+        return local_node_hash;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setLocal_node_hash(String local_node_hash) {
+        this.local_node_hash = local_node_hash;
+    }
+
+    public Long getMt_id() {
+        return mt_id;
+    }
+
+    public void setMt_id(Long mt_id) {
+        this.mt_id = mt_id;
+    }
+
+    public String getOspf_route_type() {
+        return ospf_route_type;
+    }
+
+    public void setOspf_route_type(String ospf_route_type) {
+        this.ospf_route_type = ospf_route_type;
+    }
+
+    public String getIgp_flags() {
+        return igp_flags;
+    }
+
+    public void setIgp_flags(String igp_flags) {
+        this.igp_flags = igp_flags;
+    }
+
+    public Long getRoute_tag() {
+        return route_tag;
+    }
+
+    public void setRoute_tag(Long route_tag) {
+        this.route_tag = route_tag;
+    }
+
+    public Long getExt_route_tag() {
+        return ext_route_tag;
+    }
+
+    public void setExt_route_tag(Long ext_route_tag) {
+        this.ext_route_tag = ext_route_tag;
+    }
+
+    public String getOspf_fwd_address() {
+        return ospf_fwd_address;
+    }
+
+    public void setOspf_fwd_address(String ospf_fwd_address) {
+        this.ospf_fwd_address = ospf_fwd_address;
+    }
+
+    public Long getIgp_metric() {
+        return igp_metric;
+    }
+
+    public void setIgp_metric(Long igp_metric) {
+        this.igp_metric = igp_metric;
+    }
+
+    public String getPrefix() {
+        return prefix;
+    }
+
+    public void setPrefix(String prefix) {
+        this.prefix = prefix;
+    }
+
+    public Integer getPrefix_len() {
+        return prefix_len;
+    }
+
+    public void setPrefix_len(Integer prefix_len) {
+        this.prefix_len = prefix_len;
     }
 
     public Boolean getPrePolicy() {
@@ -265,11 +337,11 @@ public class LsNodePojo {
         isAdjRibIn = adjRibIn;
     }
 
-    public String getSr_capabilities() {
-        return sr_capabilities;
+    public String getPrefix_sid_tlv() {
+        return prefix_sid_tlv;
     }
 
-    public void setSr_capabilities(String sr_capabilities) {
-        this.sr_capabilities = sr_capabilities;
+    public void setPrefix_sid_tlv(String prefix_sid_tlv) {
+        this.prefix_sid_tlv = prefix_sid_tlv;
     }
 }

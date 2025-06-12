@@ -28,9 +28,9 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Base class for parsing openbmp.parsed.* messages.
+ * Base class for parsing bgpdata.parsed.* messages.
  * <p>
- * See http://openbmp.org/#!docs/MESSAGE_BUS_API.md for more details.
+ * See http://bgpdata.org/#!docs/MESSAGE_BUS_API.md for more details.
  * <p>
  * Schema Version: 1.7
  *
@@ -72,7 +72,7 @@ public abstract class Base {
      * Parse TSV rows of data from message
      *
      * @param version Float representation of maximum message bus specification version supported.
-     *                See http://openbmp.org/#!docs/MESSAGE_BUS_API.md for more details.
+     *                See http://bgpdata.org/#!docs/MESSAGE_BUS_API.md for more details.
      * @param data    TSV data (MUST not include the headers)
      * @return True if error, False if no errors
      */

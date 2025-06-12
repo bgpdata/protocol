@@ -20,7 +20,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Format class for base_attribute parsed messages (openbmp.parsed.base_attribute)
+ * Format class for base_attribute parsed messages (bgpdata.parsed.base_attribute)
  * <p>
  * Schema Version: 1.7
  */
