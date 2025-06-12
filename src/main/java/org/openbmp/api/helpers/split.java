@@ -7,7 +7,7 @@
  * and is available at http://www.eclipse.org/legal/epl-v10.html
  *
  */
-package org.openbmp.api.helpers;
+package org.bgpdata.api.helpers;
 
 import java.util.ArrayList;
 import java.util.List;

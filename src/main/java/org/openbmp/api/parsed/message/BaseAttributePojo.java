@@ -1,4 +1,4 @@
-package org.openbmp.api.parsed.message;
+package org.bgpdata.api.parsed.message;
 /*
  * Copyright (c) 2018 Cisco Systems, Inc. and others.  All rights reserved.
  * Copyright (c) 2018 Tim Evens (tim@evensweb.com).  All rights reserved.

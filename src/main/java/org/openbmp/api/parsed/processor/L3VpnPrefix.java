@@ -7,11 +7,11 @@
  * and is available at http://www.eclipse.org/legal/epl-v10.html
  *
  */
-package org.openbmp.api.parsed.processor;
+package org.bgpdata.api.parsed.processor;
 
 
-import org.openbmp.api.helpers.split;
-import org.openbmp.api.parsed.message.L3VpnPrefixPojo;
+import org.bgpdata.api.helpers.split;
+import org.bgpdata.api.parsed.message.L3VpnPrefixPojo;
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;

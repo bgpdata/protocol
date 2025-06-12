@@ -1,4 +1,4 @@
-package org.openbmp.api.helpers;
+package org.bgpdata.api.helpers;
 /*
  * Copyright (c) 2015-2016 Cisco Systems, Inc. and others.  All rights reserved.
  *

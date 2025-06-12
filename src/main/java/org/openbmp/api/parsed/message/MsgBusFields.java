@@ -1,4 +1,4 @@
-package org.openbmp.api.parsed.message;
+package org.bgpdata.api.parsed.message;
 
 /**
  * Enum to define all the headers and their default values.

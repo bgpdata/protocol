@@ -1,4 +1,4 @@
-package org.openbmp.api.parsed.processor;
+package org.bgpdata.api.parsed.processor;
 /*
  * Copyright (c) 2015 Cisco Systems, Inc. and others.  All rights reserved.
  *

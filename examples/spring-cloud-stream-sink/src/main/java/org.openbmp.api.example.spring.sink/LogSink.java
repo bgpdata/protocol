@@ -6,7 +6,7 @@
  * and is available at http://www.eclipse.org/legal/epl-v10.html
  *
  */
-package org.openbmp.api.example.spring.sink;
+package org.bgpdata.api.example.spring.sink;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,7 +14,7 @@ import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.cloud.stream.annotation.StreamListener;
 import org.springframework.cloud.stream.messaging.Sink;
 import org.springframework.integration.annotation.ServiceActivator;
-import org.openbmp.api.parsed.message.*;
+import org.bgpdata.api.parsed.message.*;
 import org.springframework.messaging.handler.annotation.Header;
 
 

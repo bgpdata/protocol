@@ -4,12 +4,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.openbmp.api</groupId>
-    <artifactId>openbmp-api-message</artifactId>
+    <groupId>org.bgpdata.api</groupId>
+    <artifactId>bgpdata-api-message</artifactId>
     <packaging>jar</packaging>
 
-    <name>openbmp-api-message</name>
-    <url>http://www.openbmp.org</url>
+    <name>bgpdata-api-message</name>
+    <url>http://www.bgp-data.net</url>
 
     <licenses>
         <license>

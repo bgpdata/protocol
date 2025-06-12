@@ -10,7 +10,7 @@ Messages from kafka (headers and content) are parsed and made available in ```Ma
 Currently this is not in maven central, but will be soon.  For now, you should do a ```maven install``` into your local repository.  
 
     git clone 
-    cd openbmp-api-message
+    cd bgpdata-api-message
     mvn clean install
     
    
@@ -24,8 +24,8 @@ Use this library in any existing java project.
 
 ```xml
     <dependency>
-        <groupId>org.openbmp.api</groupId>
-        <artifactId>openbmp-api-message</artifactId>
+        <groupId>org.bgpdata.api</groupId>
+        <artifactId>bgpdata-api-message</artifactId>
         <version>0.1.0-SNAPSHOT</version>
     </dependency>
 ```
@@ -34,7 +34,7 @@ Use this library in any existing java project.
 ### Code
 
 ```java
-import org.openbmp.api.parsed.message.*;
+import org.bgpdata.api.parsed.message.*;
 
 String raw_kafka_message_data;
 
