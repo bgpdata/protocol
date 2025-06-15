@@ -1,20 +1,21 @@
-# OpenBMP API Message Java Library
+# Protocol
 
-This library implements the OpenBMP message bus specification as defined at [MESSAGE_BUS_API.md](http://openbmp.org/#!docs/MESSAGE_BUS_API.md).
+This library implements the Message Bus API specification as defined at [MESSAGE_BUS_API.md](http://openbmp.org/#!docs/MESSAGE_BUS_API.md).
  
-Messages from kafka (headers and content) are parsed and made available in ```Map``` and String/JSON.    ```ObjectMapper``` can be used to convert to POJO.
+Messages from kafka (headers and content) are parsed and made available in `Map` and String/JSON.`ObjectMapper` can be used to convert to POJO.
 
 > ### Current Schema supported is 1.2
 
 ## Install
-Currently this is not in maven central, but will be soon.  For now, you should do a ```maven install``` into your local repository.  
+Currently this is not in maven central, but will be soon.  For now, you should do a `maven install` into your local repository.  
 
-    git clone 
-    cd bgpdata-api-message
-    mvn clean install
-    
+```bash
+git clone 
+cd bgpdata-api-message
+mvn clean install
+```
    
- You can also do a ```maven clean package``` to create the **jar** file.
+You can also do a `maven clean package` to create the **jar** file.
  
 ## Usage
  
@@ -23,11 +24,11 @@ Use this library in any existing java project.
 ### Maven
 
 ```xml
-    <dependency>
-        <groupId>org.bgpdata.api</groupId>
-        <artifactId>bgpdata-api-message</artifactId>
-        <version>0.1.0-SNAPSHOT</version>
-    </dependency>
+<dependency>
+    <groupId>org.bgpdata.api</groupId>
+    <artifactId>bgpdata-api-message</artifactId>
+    <version>0.1.0-SNAPSHOT</version>
+</dependency>
 ```
  
     
@@ -44,7 +45,6 @@ Message msg = new Message(raw_kafka_message_data);
 Peer peer = new Peer(msg.getContent());
 
 // Do something with peer.getRowMap() or peer.toJson()
-
 ```
 
 #### Message
@@ -57,35 +57,33 @@ Each message type, such as ***Router***, ***Peer***, ... are parsed based on  [M
 there is a separate class for each type.  All classes return the same data for use by your application.  
 
 ```java
-    /**
-     * Get the rowMap
-     *
-     * @return parsed rowMap is returned
-     */
-    public List<Map<String, Object>> getRowMap();
-    
-   /**
-     * Get rowMap as Json
-     *
-     * @return JSON String representing the parsed rowMap
-     */
-    public String toJson();
-    
-    /**
-     * Get rowMap as Pretty Json
-     *
-     * @return Pretty formatted JSON String representing the parsed rowMap
-     */
-    public String toJsonPretty();
+/**
+ * Get the rowMap
+ *
+ * @return parsed rowMap is returned
+ */
+public List<Map<String, Object>> getRowMap();
+
+/**
+ * Get rowMap as Json
+ *
+ * @return JSON String representing the parsed rowMap
+ */
+public String toJson();
+
+/**
+ * Get rowMap as Pretty Json
+ *
+ * @return Pretty formatted JSON String representing the parsed rowMap
+ */
+public String toJsonPretty();
 }
-
 ```
-
 
 ### Spring Cloud-Stream
 
-[Spring Cloud-Stream](https://cloud.spring.io/spring-cloud-stream/) is very easy to use with Kafka and OpenBMP.  
-See example [spring-cloud-stream-sink](examples/spring-cloud-stream-sink/README.md) for a working example.  
+[Spring Cloud-Stream](https://cloud.spring.io/spring-cloud-stream/) is very easy to use with Kafka and BGPDATA.
+See example [spring-cloud-stream-sink](examples/spring-cloud-stream-sink/README.md) for a working example.
 
 
 
