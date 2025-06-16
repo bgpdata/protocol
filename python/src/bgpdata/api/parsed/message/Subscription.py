@@ -47,6 +47,16 @@ class Subscription(Message):
             )
             super().__init__(type="subscription", content=content, **kwargs)
 
+    def __bytes__(self):
+        """
+        Returns a byte representation of the subscription message in the format:
+        action\tresource
+        This matches the Java implementation's format.
+        """
+        if not self.content:
+            raise ValueError("Subscription content is not set")
+        return f"{self.content.action}\t{self.content.resource}".encode('utf-8')
+
     def _parse_content(self):
         """
         Overrides the base method to parse the content into a
